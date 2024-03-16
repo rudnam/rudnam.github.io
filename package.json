@@ -15,6 +15,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "format": "npx prettier . --write",
+    "type-check": "tsc --noEmit",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
