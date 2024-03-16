@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+.App {
+  height: 100vh;
+  font-family: "Source Sans 4", "Radio Canada", "Noto Sans JP", sans-serif;
+  background-color: #010103;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #cfced9;
+}
+
+.App-header {
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #cfced97c;
+}
+
+.App-header span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
