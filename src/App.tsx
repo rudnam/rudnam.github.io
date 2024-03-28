@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import LeftSidebar from "./components/LeftSidebar";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -26,10 +27,12 @@ function App() {
 
   useEffect(() => {
     const root = document.querySelector("html");
+    if (!root) return;
+
     if (theme === "dark") {
-      root?.classList.remove("light-mode");
+      root.classList.remove("light-mode");
     } else {
-      root?.classList.add("light-mode");
+      root.classList.add("light-mode");
     }
   }, [theme]);
 
@@ -52,6 +55,7 @@ function App() {
           </Routes>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

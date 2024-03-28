@@ -13,6 +13,7 @@
 }
 
 .left-sidebar.open {
+  margin: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-right: 1px solid var(--color-ui);
@@ -23,11 +24,12 @@
   z-index: 1;
   top: 0;
   left: 0;
-  height: 100dvh;
+  height: calc(100dvh - 2rem);
 
   .close-sidebar {
     display: block;
     align-self: flex-end;
+    margin-bottom: 1.6rem;
   }
   ul {
     gap: 1rem;
@@ -48,11 +50,12 @@
   text-decoration: none;
   color: var(--color-text-primary);
   cursor: pointer;
+
+  transition: color 0.3s ease;
 }
 
 .left-sidebar ul li a:hover {
   color: var(--color-primary);
-  transition: color 0.3s ease;
 }
 
 .close-sidebar {

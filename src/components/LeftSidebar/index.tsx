@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./LeftSidebar.css";
 
-function LeftSidebar() {
+const LeftSidebar: React.FC = () => {
   const closeSidebar = () => {
-    document.querySelector(".left-sidebar")?.classList.remove("open");
+    const sidebar = document.querySelector(".left-sidebar");
+    if (!sidebar) return;
+    sidebar.classList.remove("open");
   };
 
   return (
@@ -20,7 +22,7 @@ function LeftSidebar() {
         </li>
         <li>
           <Link to="/about-me" onClick={() => closeSidebar()}>
-            About me
+            About Me
           </Link>
         </li>
         <li>
@@ -31,6 +33,6 @@ function LeftSidebar() {
       </ul>
     </div>
   );
-}
+};
 
 export default LeftSidebar;

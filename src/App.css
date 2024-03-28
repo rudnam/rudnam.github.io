@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 :root {
   --color-bg-primary: #010103;
   --color-bg-inverted: #ffffff;
@@ -13,11 +13,10 @@
   --color-ui: #666664;
   --color-ui-darker: #4f4f4e;
   --max-width: 800px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   height: 100dvh;
-
   transition: color 0.5s ease;
 }
 
@@ -34,6 +33,7 @@
   font-family: "Source Sans 3", "Noto Sans JP", "Radio Canada", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
 }
 
 span.prim {
@@ -54,11 +54,7 @@ main {
   align-items: stretch;
   justify-content: center;
   height: 100%;
-  font-size: 1.2rem;
-  b {
-    color: var(--color-primary);
-    font-weight: normal;
-  }
+  min-height: calc(100dvh - 6rem);
 }
 
 .main-container {
@@ -70,6 +66,8 @@ main {
 }
 
 .button {
+  user-select: none;
+  -webkit-user-select: none;
   font-size: 1rem;
   text-align: center;
   border: 1px solid var(--color-ui);
@@ -83,6 +81,23 @@ main {
   filter: brightness(85%);
 }
 
+.ja,
+.zh {
+  font-size: 0.9em;
+}
+
+.ja {
+  font-family: "Noto Sans JP";
+}
+
+.zh {
+  font-family: "Noto Sans SC";
+}
+
+a {
+  color: var(--color-secondary);
+}
+
 @media (min-width: 513px) {
   .sidebar-toggle {
     display: none;
@@ -94,6 +109,6 @@ main {
 
 @media (max-width: 512px) {
   :root {
-    font-size: 14px;
+    font-size: 16px;
   }
 }

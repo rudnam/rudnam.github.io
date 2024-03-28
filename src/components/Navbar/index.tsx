@@ -15,7 +15,8 @@ const Navbar: React.FC<Props> = ({ theme, handleThemeToggle }) => {
           className="sidebar-toggle button"
           onClick={() => {
             const sidebar = document.querySelector(".left-sidebar");
-            sidebar?.classList.toggle("open");
+            if (!sidebar) return;
+            sidebar.classList.toggle("open");
           }}
         >
           ≡
