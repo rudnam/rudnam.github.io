@@ -1,11 +1,11 @@
 .left-sidebar {
   padding: 1rem 2rem;
-  margin: 0;
+  margin: 1rem 0;
   background-color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 5rem;
+  top: 4rem;
   width: 250px;
   height: fit-content;
   overflow-y: auto;
