@@ -1,30 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-.App {
+:root {
+  --color-bg-primary: #010103;
+  --color-bg-inverted: #ffffff;
+  --color-text-primary: #cfced9;
+  --color-text-inverted: #010103;
+  --color-primary: #bc8cff;
+  --color-primary-darker: #8e3dff;
+  --color-secondary: #79a9ec;
+  --color-secondary-darker: #3a81e3;
+  --color-tertiary: #ff8f40;
+  --color-tertiary-darker: #df5c00;
+  --color-ui: #666664;
+  --color-ui-darker: #4f4f4e;
+  --max-width: 800px;
+  font-size: 16px;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
   height: 100vh;
-  font-family: "Source Sans 4", "Radio Canada", "Noto Sans JP", sans-serif;
-  background-color: #010103;
+
+  transition: color 0.5s ease;
+}
+
+:root.light-mode {
+  --color-bg-primary: var(--color-bg-inverted);
+  --color-text-primary: var(--color-text-inverted);
+  --color-primary: var(--color-primary-darker);
+  --color-secondary: var(--color-secondary-darker);
+  --color-tertiary: var(--color-tertiary-darker);
+  --color-ui: var(--color-ui-darker);
+}
+
+.App {
+  font-family: "Source Sans 3", "Noto Sans JP", "Radio Canada", sans-serif;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
-  color: #cfced9;
 }
 
-.App-header {
-  font-size: 2rem;
-  padding: 1rem;
-  border-bottom: 1px solid #cfced97c;
+span.prim {
+  color: var(--color-primary);
 }
 
-.App-header span:hover {
-  text-decoration: underline;
-  cursor: pointer;
+span.sec {
+  color: var(--color-secondary);
+}
+
+span.tert {
+  color: var(--color-tertiary);
 }
 
 main {
+  padding: 0;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
   height: 100%;
-  padding: 1rem;
   font-size: 1.2rem;
+  b {
+    color: var(--color-primary);
+    font-weight: normal;
+  }
+}
+
+.main-container {
+  position: relative;
+  padding: 1rem 2rem;
+  width: calc(100% - 20px);
+  max-width: var(--max-width);
+  height: 100%;
+}
+
+.button {
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid var(--color-ui);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(85%);
+}
+
+@media (min-width: 513px) {
+  .sidebar-toggle {
+    display: none;
+  }
+  .left-sidebar {
+    display: flex;
+  }
+}
+
+@media (max-width: 512px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .left-sidebar {
+    display: none;
+  }
 }

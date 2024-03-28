@@ -1,0 +1,57 @@
+.nav-bar {
+  height: 1.8rem;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-ui);
+  background-color: var(--color-bg-primary);
+}
+
+.home-button a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.home-button a:hover {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-toggle {
+  display: none;
+  color: var(--color-ui);
+  font-size: 1.3rem;
+  height: 2rem;
+  aspect-ratio: 1 / 1;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  font-size: 1.3rem;
+  height: 2rem;
+  aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 513px) {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 512px) {
+  .sidebar-toggle {
+    display: block;
+  }
+}
