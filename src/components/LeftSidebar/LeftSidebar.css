@@ -24,11 +24,14 @@
   top: 0;
   left: 0;
   width: 200px;
-  height: 100vh;
+  height: 100dvh;
 
   .close-sidebar {
     display: block;
     align-self: flex-end;
+  }
+  ul {
+    gap: 1rem;
   }
 }
 

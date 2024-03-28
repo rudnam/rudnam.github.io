@@ -16,7 +16,7 @@
   font-size: 16px;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
-  height: 100vh;
+  height: 100dvh;
 
   transition: color 0.5s ease;
 }
@@ -95,13 +95,5 @@ main {
 @media (max-width: 512px) {
   :root {
     font-size: 14px;
-  }
-
-  .sidebar-toggle {
-    display: block;
-  }
-
-  .left-sidebar {
-    display: none;
   }
 }
