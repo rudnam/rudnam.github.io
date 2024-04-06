@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.94987c3c.css",
-    "main.js": "/static/js/main.a16c115f.js",
+    "main.css": "/static/css/main.c8c7b879.css",
+    "main.js": "/static/js/main.05ca9183.js",
+    "static/media/jp-study.png": "/static/media/jp-study.6e58f27b226c33d9b0fe.png",
+    "static/media/fso-bloglist.png": "/static/media/fso-bloglist.5ce8157eb4db15963667.png",
     "index.html": "/index.html",
-    "main.94987c3c.css.map": "/static/css/main.94987c3c.css.map",
-    "main.a16c115f.js.map": "/static/js/main.a16c115f.js.map"
+    "static/media/link.svg": "/static/media/link.abd4e7b8a21e6d1c0d03.svg",
+    "main.c8c7b879.css.map": "/static/css/main.c8c7b879.css.map",
+    "main.05ca9183.js.map": "/static/js/main.05ca9183.js.map"
   },
   "entrypoints": [
-    "static/css/main.94987c3c.css",
-    "static/js/main.a16c115f.js"
+    "static/css/main.c8c7b879.css",
+    "static/js/main.05ca9183.js"
   ]
 }
