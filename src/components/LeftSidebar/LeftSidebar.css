@@ -62,15 +62,15 @@
   display: none;
 }
 
-@media (min-width: 513px) {
-  .left-sidebar {
-    display: flex;
+:root.mobile {
+  .left-sidebar:not(.open) {
+    position: absolute;
+    left: -1000px;
   }
 }
 
-@media (max-width: 512px) {
+:root:not(.mobile) {
   .left-sidebar {
-    position: absolute;
-    left: -1000px;
+    display: flex;
   }
 }

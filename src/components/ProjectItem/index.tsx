@@ -8,7 +8,12 @@ interface Props {
 
 const ProjectItem: React.FC<Props> = ({ project }) => {
   return (
-    <div className="project-item" onClick={() => window.open(project.url)}>
+    <a
+      className="project-item"
+      href={project.url}
+      rel="noreferrer"
+      target="_blank"
+    >
       <h3 className="project-item-title">{project.title}</h3>
       <img className="project-item-img" src={project.image}></img>
       <p className="project-item-desc">{project.description}</p>
@@ -21,7 +26,6 @@ const ProjectItem: React.FC<Props> = ({ project }) => {
               href={link.url}
               rel="noreferrer"
               target="_blank"
-              onClick={(e) => e.stopPropagation()}
             >
               {link.label}
             </a>
@@ -37,7 +41,7 @@ const ProjectItem: React.FC<Props> = ({ project }) => {
           ))}
         </div>
       )}
-    </div>
+    </a>
   );
 };
 

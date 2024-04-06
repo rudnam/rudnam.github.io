@@ -18,11 +18,10 @@ function AboutMe() {
         particularly in the field of software development.
       </p>
       <p>
-        As for my interests I like learning new languages, wherein I&apos;ve
-        been studying <span className="ja">日本語</span> (Japanese) for 2 years
-        and have just started studying <span className="zh">中文</span>{" "}
-        (Mandarin) recently. I also like following what&apos;s going on in the
-        NBA and just basketball in general.
+        As for my interests I like learning new languages. I have been studying
+        Japanese for 2 years and have passed the JLPT N1 level. I have also just
+        started studying Mandarin recently. I also like following what&apos;s
+        going on in the NBA and just basketball in general.
       </p>
       <p>
         You can contact me through{" "}

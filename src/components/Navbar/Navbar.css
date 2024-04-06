@@ -45,16 +45,16 @@
 }
 
 .light-mode .theme-toggle {
-  color: #a9792b;
+  color: #c08a33;
 }
 
-@media (min-width: 513px) {
+:root:not(.mobile) {
   .sidebar-toggle {
     display: none;
   }
 }
 
-@media (max-width: 512px) {
+:root.mobile {
   .sidebar-toggle {
     display: block;
   }

@@ -7,9 +7,12 @@ import Home from "./pages/Home";
 import LeftSidebar from "./components/LeftSidebar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState<string>("dark");
+
+  const isMobile = useMediaQuery({ query: "(max-width: 512px)" });
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -34,7 +37,13 @@ function App() {
     } else {
       root.classList.add("light-mode");
     }
-  }, [theme]);
+
+    if (isMobile) {
+      root.classList.add("mobile");
+    } else {
+      root.classList.remove("mobile");
+    }
+  }, [theme, isMobile]);
 
   const themeToggleHandler = () => {
     const newTheme = theme === "dark" ? "light" : "dark";

@@ -5,6 +5,7 @@ export interface Project {
   url: string;
   links?: Link[];
   technologies?: string[];
+  hide?: boolean;
 }
 
 interface Link {

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 :root {
-  --color-bg-primary: #010103;
+  --color-bg-primary: #000000;
   --color-bg-inverted: #ffffff;
   --color-text-primary: #cfced9;
   --color-text-inverted: #010103;
@@ -98,7 +98,7 @@ a {
   color: var(--color-secondary);
 }
 
-@media (min-width: 513px) {
+:root:not(.mobile) {
   .sidebar-toggle {
     display: none;
   }
@@ -107,8 +107,6 @@ a {
   }
 }
 
-@media (max-width: 512px) {
-  :root {
-    font-size: 14px;
-  }
+:root.mobile {
+  font-size: 14px;
 }
