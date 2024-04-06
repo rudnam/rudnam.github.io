@@ -5,7 +5,7 @@ function AboutMe() {
     <div>
       <h1>About Me</h1>
       <p>
-        What&apos;s up! I&apos;m{" "}
+        Hi! I&apos;m{" "}
         <b>
           <span className="prim">Francis</span>
         </b>

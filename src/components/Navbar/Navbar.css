@@ -44,6 +44,10 @@
   aspect-ratio: 1 / 1;
 }
 
+.light-mode .theme-toggle {
+  color: #a9792b;
+}
+
 @media (min-width: 513px) {
   .sidebar-toggle {
     display: none;
