@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8c7b879.css",
-    "main.js": "/static/js/main.05ca9183.js",
+    "main.css": "/static/css/main.64f2baf2.css",
+    "main.js": "/static/js/main.2ba4bfea.js",
+    "static/media/cs180-project.png": "/static/media/cs180-project.d326ee1b3fa33fb1c455.png",
+    "static/media/fso-repo.png": "/static/media/fso-repo.70264014ec4621400649.png",
+    "static/media/cs132-project.png": "/static/media/cs132-project.54b881aa9da2e9bda97e.png",
     "static/media/jp-study.png": "/static/media/jp-study.6e58f27b226c33d9b0fe.png",
+    "static/media/portfolio.png": "/static/media/portfolio.d47381c8f2e01d442fa4.png",
+    "static/media/highlightword.png": "/static/media/highlightword.ed99ed044651ad00c27b.png",
+    "static/media/odin-todolist.png": "/static/media/odin-todolist.e3e247ec126af22d0a9f.png",
+    "static/media/studysync.png": "/static/media/studysync.79d94ad85b8fc8983957.png",
     "static/media/fso-bloglist.png": "/static/media/fso-bloglist.5ce8157eb4db15963667.png",
     "index.html": "/index.html",
     "static/media/link.svg": "/static/media/link.abd4e7b8a21e6d1c0d03.svg",
-    "main.c8c7b879.css.map": "/static/css/main.c8c7b879.css.map",
-    "main.05ca9183.js.map": "/static/js/main.05ca9183.js.map"
+    "main.64f2baf2.css.map": "/static/css/main.64f2baf2.css.map",
+    "main.2ba4bfea.js.map": "/static/js/main.2ba4bfea.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8c7b879.css",
-    "static/js/main.05ca9183.js"
+    "static/css/main.64f2baf2.css",
+    "static/js/main.2ba4bfea.js"
   ]
 }
