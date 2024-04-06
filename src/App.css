@@ -98,12 +98,9 @@ a {
   color: var(--color-secondary);
 }
 
-:root:not(.mobile) {
+:root:not(.tablet):not(.mobile) {
   .sidebar-toggle {
     display: none;
-  }
-  .left-sidebar {
-    display: flex;
   }
 }
 

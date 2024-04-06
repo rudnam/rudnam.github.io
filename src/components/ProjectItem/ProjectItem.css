@@ -19,6 +19,11 @@
   margin: 0;
 }
 
+.project-item-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-item-desc {
   margin: 0;
 }

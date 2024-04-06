@@ -20,15 +20,20 @@ const ProjectItem: React.FC<Props> = ({ project }) => {
       {project.links && project.links.length > 0 && (
         <div className="project-item-links">
           {project.links?.map((link, idx) => (
-            <a
+            <span
               key={idx}
               className="project-item-link"
-              href={link.url}
+              title={link.url}
               rel="noreferrer"
-              target="_blank"
+              role="link"
+              onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                window.open(link.url);
+              }}
             >
               {link.label}
-            </a>
+            </span>
           ))}
         </div>
       )}

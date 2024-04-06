@@ -10,7 +10,7 @@ const LeftSidebar: React.FC = () => {
   };
 
   return (
-    <div className="left-sidebar">
+    <nav className="left-sidebar">
       <button className="close-sidebar button" onClick={() => closeSidebar()}>
         ✖
       </button>
@@ -31,7 +31,7 @@ const LeftSidebar: React.FC = () => {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

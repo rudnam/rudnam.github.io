@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
@@ -8,11 +8,21 @@ import LeftSidebar from "./components/LeftSidebar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { useMediaQuery } from "react-responsive";
+import TableOfContents from "./components/TableOfContents";
+import { Heading } from "./types";
 
 function App() {
   const [theme, setTheme] = useState<string>("dark");
+  const isMobile = useMediaQuery({ query: "(max-width: 764px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 1224px)" });
+  const [headings, setHeadings] = useState<Heading[]>([]);
+  const location = useLocation();
 
-  const isMobile = useMediaQuery({ query: "(max-width: 512px)" });
+  useEffect(() => {
+    if (!location.pathname.includes("projects")) {
+      setHeadings([]);
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -40,10 +50,14 @@ function App() {
 
     if (isMobile) {
       root.classList.add("mobile");
-    } else {
+      root.classList.remove("tablet");
+    } else if (isTablet) {
+      root.classList.add("tablet");
       root.classList.remove("mobile");
+    } else {
+      root.classList.remove("mobile", "tablet");
     }
-  }, [theme, isMobile]);
+  }, [theme, isMobile, isTablet]);
 
   const themeToggleHandler = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
@@ -60,9 +74,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route
+              path="/projects"
+              element={<Projects handleHeadings={setHeadings} />}
+            />
           </Routes>
         </div>
+        <TableOfContents headings={headings} />
       </main>
       <Footer />
     </div>

@@ -12,3 +12,8 @@ interface Link {
   label: string;
   url: string;
 }
+
+export interface Heading {
+  id: string;
+  text: string;
+}

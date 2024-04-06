@@ -1,0 +1,45 @@
+.table-of-contents {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  background-color: var(--color-bg-primary);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 4rem;
+  width: 200px;
+  height: fit-content;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.table-of-contents-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.table-of-contents-link {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.table-of-contents-link:hover {
+  color: var(--color-primary);
+}
+
+.table-of-contents-item.active .table-of-contents-link {
+  color: var(--color-primary);
+}
+
+:root.mobile {
+  .table-of-contents {
+    display: none;
+  }
+}

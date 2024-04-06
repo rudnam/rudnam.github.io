@@ -48,12 +48,13 @@
   color: #c08a33;
 }
 
-:root:not(.mobile) {
+:root:not(.tablet):not(.mobile) {
   .sidebar-toggle {
     display: none;
   }
 }
 
+:root.tablet,
 :root.mobile {
   .sidebar-toggle {
     display: block;

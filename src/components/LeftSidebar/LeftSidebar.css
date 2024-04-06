@@ -6,7 +6,7 @@
   flex-direction: column;
   position: sticky;
   top: 4rem;
-  width: 200px;
+  width: 150px;
   height: fit-content;
   overflow-y: auto;
   transition: left 0.3s ease;
@@ -62,6 +62,7 @@
   display: none;
 }
 
+:root.tablet,
 :root.mobile {
   .left-sidebar:not(.open) {
     position: absolute;
@@ -69,7 +70,7 @@
   }
 }
 
-:root:not(.mobile) {
+:root:not(.tablet):not(.mobile) {
   .left-sidebar {
     display: flex;
   }
