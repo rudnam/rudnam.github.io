@@ -19,7 +19,7 @@ const Navbar: React.FC<Props> = ({ theme, handleThemeToggle }) => {
             sidebar.classList.toggle("open");
           }}
         >
-          ≡
+          <span className="material-symbols-outlined icon-align">menu</span>
         </li>
         <li className="home-button" onClick={() => location.reload()}>
           <Link to="/">rudnam</Link>
@@ -30,7 +30,15 @@ const Navbar: React.FC<Props> = ({ theme, handleThemeToggle }) => {
             handleThemeToggle();
           }}
         >
-          {theme === "dark" ? "☾" : "☀"}
+          {theme === "dark" ? (
+            <span className="material-symbols-outlined  icon-align">
+              dark_mode
+            </span>
+          ) : (
+            <span className="material-symbols-outlined icon-align">
+              light_mode
+            </span>
+          )}
         </li>
       </ul>
     </nav>

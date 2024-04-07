@@ -60,6 +60,8 @@
 
 .close-sidebar {
   display: none;
+  font-size: 1.1rem;
+  aspect-ratio: 1 / 1;
 }
 
 :root.tablet,

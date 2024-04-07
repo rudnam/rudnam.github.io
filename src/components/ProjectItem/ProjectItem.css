@@ -51,7 +51,7 @@
 
 .project-item-link::before {
   content: " ";
-  mask: url(../../assets/img/link.svg) no-repeat;
+  mask: url(../../assets/svg/link.svg) no-repeat;
   width: 1.2em;
   height: 1em;
   display: inline-block;

@@ -12,7 +12,7 @@ const LeftSidebar: React.FC = () => {
   return (
     <nav className="left-sidebar">
       <button className="close-sidebar button" onClick={() => closeSidebar()}>
-        ✖
+        <span className="material-symbols-outlined icon-align">close</span>
       </button>
       <ul>
         <li>
