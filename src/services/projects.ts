@@ -107,7 +107,7 @@ const projects: Project[] = [
     title: "Clustering of Filipino Households using K-Means",
     image: cs180Img,
     description:
-      "A project where we analyzed a dataset of Filipino Households and applied K-means clustering. \
+      "A project where we analyzed a dataset of Filipino Households using K-means clustering. \
         Includes a Jupyter Notebook and a simple web app for demonstration of results.",
     url: "https://cs180-project.onrender.com/",
     links: [

@@ -9,6 +9,7 @@
   flex-direction: column;
   gap: 1rem;
   max-width: 100%;
+  transition: box-shadow 0.3s ease;
 }
 
 .project-item:hover {
@@ -40,6 +41,7 @@
 .project-item-link {
   color: var(--color-secondary);
   text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .project-item-link:hover {
@@ -54,7 +56,6 @@
   height: 1em;
   display: inline-block;
   background-color: currentColor;
-  margin-right: -0.15em;
   transform: rotate(-45deg);
 }
 
@@ -68,7 +69,6 @@
 
 .project-item-technology {
   border: 1px solid transparent;
-  background-color: var(--color-tertiary);
   background-color: color-mix(in srgb, var(--color-tertiary) 70%, transparent);
   filter: contrast(150%);
   border-radius: 999px;
@@ -77,12 +77,12 @@
 
 :root.mobile {
   .project-item-link::before {
-    margin: 0;
+    margin-right: 0.25em;
   }
 }
 
 :root.light-mode {
   .project-item-technology {
-    filter: contrast(100%);
+    filter: none;
   }
 }
