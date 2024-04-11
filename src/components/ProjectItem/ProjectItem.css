@@ -12,7 +12,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.project-item:hover {
+.project-item:hover:not(:has(.project-item-link:hover)) {
   box-shadow: 0px 0px 5px var(--color-ui);
 }
 
@@ -47,6 +47,7 @@
 .project-item-link:hover {
   filter: brightness(85%);
   transition: all 0.3s ease;
+  text-decoration: underline;
 }
 
 .project-item-link::before {

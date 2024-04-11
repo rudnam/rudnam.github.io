@@ -56,6 +56,6 @@
 :root.tablet,
 :root.mobile {
   .sidebar-toggle {
-    display: block;
+    display: flex;
   }
 }
