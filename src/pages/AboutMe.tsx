@@ -13,19 +13,16 @@ function AboutMe() {
       </p>
       <p>
         I&apos;m currently taking up a bachelor&apos;s degree in Computer
-        Science at the University of the Philippines - Diliman. Outside of my
-        studies at uni I also try to learn more and practice on my own,
-        particularly in the field of software development.
+        Science at the University of the Philippines - Diliman. I like learning
+        new things and that includes programming :]
       </p>
+      <p>Interests are NBA/Basketball and languages.</p>
       <p>
-        As for my interests I like learning new languages. I have been studying
-        Japanese for 2 years and have passed the JLPT N1 level. I have also just
-        started studying Mandarin recently. I also like following what&apos;s
-        going on in the NBA and just basketball in general.
-      </p>
-      <p>
-        You can contact me through{" "}
-        <a href="mailto:francisalbarracin2@gmail.com">Gmail</a>.
+        You can contact me through Gmail:{" "}
+        <a href="mailto:francis.m.albarracin@gmail.com">
+          francis.m.albarracin@gmail.com
+        </a>
+        .
       </p>
     </div>
   );
