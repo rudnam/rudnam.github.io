@@ -36,7 +36,8 @@
   color: var(--color-primary);
 }
 
-:root.mobile {
+:root.mobile,
+:root.tablet {
   .table-of-contents {
     display: none;
   }
