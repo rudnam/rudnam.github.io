@@ -1,6 +1,5 @@
 .left-sidebar {
   padding: 1rem 2rem;
-  margin: 1rem 0;
   background-color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
@@ -42,7 +41,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .left-sidebar ul li a {
