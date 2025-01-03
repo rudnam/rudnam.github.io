@@ -1,19 +1,9 @@
 .project-item {
-  text-decoration: none;
-  color: inherit;
   padding: 1rem;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 100%;
-  transition: box-shadow 0.3s ease;
-}
-
-.project-item:hover:not(:has(.project-item-link:hover)) {
-  box-shadow: 0px 0px 5px var(--color-ui);
 }
 
 .project-item-title {
@@ -21,8 +11,17 @@
 }
 
 .project-item-title a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+}
+
+.project-item-title a:hover {
+  text-decoration: underline;
+}
+
+.project-item-arrow {
+  margin-left: 0.2em;
+  font-size: 0.6em;
 }
 
 .project-item-desc {
@@ -39,25 +38,13 @@
 }
 
 .project-item-link {
-  color: var(--color-secondary);
+  color: var(--color--link);
   text-decoration: none;
   font-size: 0.9rem;
 }
 
 .project-item-link:hover {
-  filter: brightness(85%);
-  transition: all 0.3s ease;
   text-decoration: underline;
-}
-
-.project-item-link::before {
-  content: " ";
-  mask: url(../../assets/svg/link.svg) no-repeat;
-  width: 1.2em;
-  height: 1em;
-  display: inline-block;
-  background-color: currentColor;
-  transform: rotate(-45deg);
 }
 
 .project-item-technologies {
@@ -69,21 +56,7 @@
 }
 
 .project-item-technology {
-  border: 1px solid transparent;
-  background-color: color-mix(in srgb, var(--color-tertiary) 70%, transparent);
-  filter: contrast(150%);
-  border-radius: 999px;
-  padding: 0.2em 0.8em;
-}
-
-:root.mobile {
-  .project-item-link::before {
-    margin-right: 0.25em;
-  }
-}
-
-:root.light-mode {
-  .project-item-technology {
-    filter: none;
-  }
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 0.3em 0.6em;
 }

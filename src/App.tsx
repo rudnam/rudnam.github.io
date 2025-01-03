@@ -4,6 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
+import Test from "./pages/Test";
 import LeftSidebar from "./components/LeftSidebar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -78,6 +79,7 @@ function App() {
               path="/projects"
               element={<Projects handleHeadings={setHeadings} />}
             />
+            <Route path="/test" element={<Test />} />
           </Routes>
         </div>
         <TableOfContents headings={headings} />

@@ -31,7 +31,7 @@ const Navbar: React.FC<Props> = ({ theme, handleThemeToggle }) => {
           }}
         >
           {theme === "dark" ? (
-            <span className="material-symbols-outlined  icon-align">
+            <span className="material-symbols-outlined icon-align">
               dark_mode
             </span>
           ) : (

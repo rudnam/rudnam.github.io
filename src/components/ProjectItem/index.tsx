@@ -8,32 +8,32 @@ interface Props {
 
 const ProjectItem: React.FC<Props> = ({ project }) => {
   return (
-    <a
-      className="project-item"
-      href={project.url}
-      rel="noreferrer"
-      target="_blank"
-    >
-      <h3 className="project-item-title">{project.title}</h3>
+    <div className="project-item">
+      <h2 className="project-item-title">
+        <a href={project.url} rel="noreferrer" target="_blank">
+          {project.title}
+          <span className="material-symbols-outlined project-item-arrow">
+            open_in_new
+          </span>
+        </a>
+      </h2>
       <img className="project-item-img" src={project.image}></img>
       <p className="project-item-desc">{project.description}</p>
       {project.links && project.links.length > 0 && (
         <div className="project-item-links">
           {project.links?.map((link, idx) => (
-            <span
+            <a
               key={idx}
               className="project-item-link"
-              title={link.url}
+              href={link.url}
               rel="noreferrer"
-              role="link"
-              onClick={(e) => {
-                e.stopPropagation();
-                e.preventDefault();
-                window.open(link.url);
-              }}
+              target="_blank"
             >
               {link.label}
-            </span>
+              <span className="material-symbols-outlined project-item-arrow">
+                open_in_new
+              </span>
+            </a>
           ))}
         </div>
       )}
@@ -46,7 +46,7 @@ const ProjectItem: React.FC<Props> = ({ project }) => {
           ))}
         </div>
       )}
-    </a>
+    </div>
   );
 };
 

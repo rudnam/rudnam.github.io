@@ -14,9 +14,12 @@ const ProjectList: React.FC<Props> = ({ projects }) => {
       {projects.length > 0 ? (
         projects
           .filter((p) => !p.hide)
-          .map((project, idx) => (
+          .map((project, idx, filteredProjects) => (
             <section id={titleToId(project.title)} key={idx}>
               <ProjectItem key={project.title} project={project}></ProjectItem>
+              {idx < filteredProjects.length - 1 && (
+                <hr className="project-list-separator" />
+              )}
             </section>
           ))
       ) : (

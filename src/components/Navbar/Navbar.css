@@ -43,10 +43,6 @@
   aspect-ratio: 1 / 1;
 }
 
-.light-mode .theme-toggle {
-  color: #c08a33;
-}
-
 :root:not(.tablet):not(.mobile) {
   .sidebar-toggle {
     display: none;
