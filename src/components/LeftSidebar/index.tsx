@@ -30,6 +30,11 @@ const LeftSidebar: React.FC = () => {
             Projects
           </Link>
         </li>
+        <li>
+          <Link to="/notes" onClick={() => closeSidebar()}>
+            Notes
+          </Link>
+        </li>
       </ul>
     </nav>
   );

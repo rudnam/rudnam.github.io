@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProjectList from "../components/ProjectList";
 import { Heading, Project } from "../types";
-import projectObjects from "../services/projects";
+import projectObjects from "../data/projects";
 import titleToId from "../utils";
 
 interface Props {

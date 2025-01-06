@@ -4,13 +4,13 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
-import Test from "./pages/Test";
 import LeftSidebar from "./components/LeftSidebar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { useMediaQuery } from "react-responsive";
 import TableOfContents from "./components/TableOfContents";
 import { Heading } from "./types";
+import Notes from "./pages/Notes";
 
 function App() {
   const [theme, setTheme] = useState<string>("dark");
@@ -79,7 +79,7 @@ function App() {
               path="/projects"
               element={<Projects handleHeadings={setHeadings} />}
             />
-            <Route path="/test" element={<Test />} />
+            <Route path="/notes" element={<Notes />} />
           </Routes>
         </div>
         <TableOfContents headings={headings} />

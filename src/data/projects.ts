@@ -30,8 +30,7 @@ const projects: Project[] = [
     title: "LockSense",
     image: locksenseImg,
     description: `
-      Software side for an IoT smart lock system. The GitHub repository includes code \
-      for both the user-facing app and cloud component.
+      Software side for an IoT smart lock system. Includes a user-facing app and cloud server code.
       `,
     url: "https://locksense-c23a8.web.app/",
     links: [
@@ -50,8 +49,7 @@ const projects: Project[] = [
     title: "StudySync",
     image: studysyncImg,
     description:
-      "A Chrome extension for productivity. Includes a dictionary, a pomodoro timer, a todo list, and a \
-        note-taking feature.",
+      "A Chrome extension with several tools for better productivity.",
     url: "https://chromewebstore.google.com/detail/studysync-alpha/pibncdfgjlhidgmollhdfenpkjhckpdb",
     links: [
       {
@@ -77,9 +75,7 @@ const projects: Project[] = [
   {
     title: "JP-study",
     image: jpStudyImg,
-    description:
-      'A repository for storing resources for studying Japanese. Includes note templates made \
-        with HTML, CSS, and JavaScript for the spaced repetition application "Anki".',
+    description: "A repository with resources for studying Japanese.",
     url: "https://github.com/rudnam/JP-study",
     technologies: ["HTML", "CSS", "JavaScript"],
   },

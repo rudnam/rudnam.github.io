@@ -1,9 +1,9 @@
 import React from "react";
 
-function Test() {
+function Notes() {
   return (
     <div>
-      <h1>Lorem Ipsum is Dolor</h1>
+      <h1>Notes</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec arcu
         varius, viverra urna vitae, tempus enim. Donec sagittis libero at lorem
@@ -70,4 +70,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Notes;
