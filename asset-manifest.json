@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b011327b.css",
+    "main.css": "/static/css/main.041e4dfa.css",
     "main.js": "/static/js/main.756cbf8d.js",
     "static/media/dctid-website.png": "/static/media/dctid-website.797b369bddec1b854a5b.png",
     "static/media/jp-study.png": "/static/media/jp-study.6e58f27b226c33d9b0fe.png",
@@ -8,11 +8,11 @@
     "static/media/studysync.png": "/static/media/studysync.79d94ad85b8fc8983957.png",
     "static/media/locksense.png": "/static/media/locksense.d00f9af258e1df094b68.png",
     "index.html": "/index.html",
-    "main.b011327b.css.map": "/static/css/main.b011327b.css.map",
+    "main.041e4dfa.css.map": "/static/css/main.041e4dfa.css.map",
     "main.756cbf8d.js.map": "/static/js/main.756cbf8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b011327b.css",
+    "static/css/main.041e4dfa.css",
     "static/js/main.756cbf8d.js"
   ]
 }
