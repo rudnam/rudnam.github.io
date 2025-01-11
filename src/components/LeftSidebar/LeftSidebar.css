@@ -26,7 +26,7 @@
   height: calc(100dvh - 2rem);
 
   .close-sidebar {
-    display: block;
+    display: flex;
     align-self: flex-end;
     margin-bottom: 1.6rem;
   }
