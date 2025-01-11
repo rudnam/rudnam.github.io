@@ -109,7 +109,3 @@ a {
     display: none;
   }
 }
-
-:root.mobile {
-  font-size: 13px;
-}
