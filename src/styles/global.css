@@ -72,19 +72,21 @@ html.scrolled #back-to-top {
   @apply opacity-100 pointer-events-auto;
 }
 
-article img {
-  cursor: zoom-in;
-  transition: transform 0.3s ease;
-  max-width: 100%;
-  height: auto;
-}
+@media (pointer: fine) {
+  article img {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+  }
 
-article img:hover {
-  transform: scale(1.0175);
-}
+  article img:hover {
+    transform: scale(1.0175);
+  }
 
-article img:active {
-  transform: scale(2.25);
-  z-index: 10;
-  position: relative;
+  article img:active {
+    transform: scale(2.25);
+    z-index: 10;
+    position: relative;
+  }
 }
