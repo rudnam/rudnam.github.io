@@ -4,7 +4,7 @@ description: "From phones to car dashboards — nearly every surface glows now."
 date: "Jul 09 2025"
 ---
 
----
+![Cars](cars.jpg)
 
 (This is just a generated blog for test)
 

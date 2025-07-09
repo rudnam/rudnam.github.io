@@ -73,18 +73,21 @@ html.scrolled #back-to-top {
 }
 
 @media (pointer: fine) {
-  article img {
+  article img,
+  img.click-to-zoom {
     cursor: zoom-in;
     transition: transform 0.3s ease;
     max-width: 100%;
     height: auto;
   }
 
-  article img:hover {
+  article img:hover,
+  img.click-to-zoom:hover {
     transform: scale(1.0175);
   }
 
-  article img:active {
+  article img:active,
+  img.click-to-zoom:active {
     transform: scale(2.25);
     z-index: 10;
     position: relative;
