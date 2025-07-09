@@ -14,6 +14,12 @@ Written by the Roman Emperor Marcus Aurelius, without any intention of publicati
 
 Faced with the challenges of ruling the Roman Empire, Aurelius wrote to reflect not only on leadership, but on life, death, virtue, and how one should live. Today, his notes have become one of the most iconic works in Stoic philosophy.
 
+### Doing things with intention
+
+One idea mentioned in _Meditations_ is the importance of doing things with intention. As we go about our lives, we tend to do things on autopilot -- not giving much thought to what we're doing at the moment. This happens so naturally that an entire day can just go by without us realizing it.
+
+Aurelius often reflects on how every moment should be lived deliberately, with purpose. If we're going to go ahead and do something, let it be because **we've** chosen to -- not just for the sake of doing it.
+
 ### Perspective on Life
 
 The biggest takeaway I have gotten from reading the book is realizing just how small we are in the grand scheme of things. Our lives are just one among billions of human beings who have ever lived on Earth. It is only a brief moment that we have in this world before our own time ends and the universe continues to live on.
