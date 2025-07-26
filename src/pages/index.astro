@@ -35,6 +35,30 @@ const projects = (await getCollection("projects"))
       <section>
         <article class="space-y-4">
           <p class="animate">Welcome to my corner of the internet. 🔥</p>
+          <ul class="flex flex-wrap gap-2 not-prose animate">
+            {
+              SOCIALS.map((SOCIAL) => (
+                <li class="flex gap-x-2 text-nowrap">
+                  <Link
+                    href={SOCIAL.HREF}
+                    external
+                    aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}
+                  >
+                    {SOCIAL.NAME}
+                  </Link>
+                  {"/"}
+                </li>
+              ))
+            }
+            <li class="line-clamp-1">
+              <Link
+                href={`mailto:${SITE.EMAIL}`}
+                aria-label={`Email ${SITE.NAME}`}
+              >
+                {SITE.EMAIL}
+              </Link>
+            </li>
+          </ul>
         </article>
       </section>
 
@@ -67,34 +91,6 @@ const projects = (await getCollection("projects"))
               </li>
             ))
           }
-        </ul>
-      </section>
-
-      <section class="animate space-y-4">
-        <h5 class="text-heading">Contacts</h5>
-        <ul class="flex flex-wrap gap-2">
-          {
-            SOCIALS.map((SOCIAL) => (
-              <li class="flex gap-x-2 text-nowrap">
-                <Link
-                  href={SOCIAL.HREF}
-                  external
-                  aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}
-                >
-                  {SOCIAL.NAME}
-                </Link>
-                {"/"}
-              </li>
-            ))
-          }
-          <li class="line-clamp-1">
-            <Link
-              href={`mailto:${SITE.EMAIL}`}
-              aria-label={`Email ${SITE.NAME}`}
-            >
-              {SITE.EMAIL}
-            </Link>
-          </li>
         </ul>
       </section>
     </div>
