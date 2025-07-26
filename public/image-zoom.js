@@ -23,6 +23,7 @@ function createOverlay() {
   const overlay = document.createElement("div");
   overlay.className = "zoom-overlay";
   const overlayImg = document.createElement("img");
+  overlayImg.alt = "Zoom overlay";
   overlay.appendChild(overlayImg);
   document.body.appendChild(overlay);
   return overlay;
