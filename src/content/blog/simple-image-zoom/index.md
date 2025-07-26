@@ -4,7 +4,7 @@ description: "Steps to make images zoomable for your Astro blog with JavaScript 
 date: "Jul 26 2025"
 ---
 
-![Flag](flag.jpg)
+![Image zoom gif](image-zoom.gif)
 
 When I started using the [Astro Nano](https://github.com/markhorn-dev/astro-nano) template, images inside the markdown posts sometimes become too small and hard to read.
 
@@ -138,5 +138,3 @@ Include the zoom overlay component and zoom script in your Astro layout (e.g., `
 ```
 
 Now, images in your posts can be clicked to open a clean, lightweight zoom view!
-
-![Image zoom gif](image-zoom.gif)

@@ -4,7 +4,7 @@ description: "Steps to add a copy button for code blocks using JavaScript and CS
 date: "Jul 26 2025"
 ---
 
-![Lakeside](lakeside.jpg)
+![Copy code demo](copy-code-button.gif)
 
 In Astro, code fences (```) come with [built-in syntax highlighting support](https://docs.astro.build/en/guides/syntax-highlighting/) for Shiki and Prism. These, however, do not come with built-in copy to clipboard buttons which can make repeatedly copying code cumbersome.
 
@@ -125,5 +125,3 @@ Then include it in your Astro layout (e.g., `src/layouts/PageLayout.astro`):
 ```
 
 Now, every code block in your markdown posts will have a Copy button that works instantly.
-
-![Copy code demo](copy-code-button.gif)
