@@ -4,7 +4,7 @@ description: "Steps to make images zoomable for your Astro blog with JavaScript 
 date: "Jul 26 2025"
 ---
 
-![alt text](flag.jpg)
+![Flag](flag.jpg)
 
 When I started using the [Astro Nano](https://github.com/markhorn-dev/astro-nano) template, images inside the markdown posts sometimes become too small and hard to read.
 
@@ -126,7 +126,7 @@ setupZoom();
 document.addEventListener("astro:page-load", setupZoom);
 ```
 
-Then include this in your astro layout:
+Then include this in your astro layout (e.g., `src/layouts/PageLayout.astro`):
 
 ```astro
 <body>
