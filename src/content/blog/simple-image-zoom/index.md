@@ -89,7 +89,7 @@ Include the following CSS (in `global.css` or your layout stylesheet):
 
 ## 4. Add the JavaScript for Zoom Functionality
 
-Create `public/image-zoom.js`:
+Create `src/scripts/image-zoom.js`:
 
 ```js
 function isDesktop() {
@@ -131,7 +131,9 @@ Include the zoom overlay component and zoom script in your Astro layout (e.g., `
   <slot />
   ...
   <div class="zoom-overlay"><img alt="Zoom overlay" /></div>
-  <script type="module" src={`${import.meta.env.BASE_URL}image-zoom.js`}></script>
+  <script>
+    import "@/scripts/image-zoom.js";
+  </script>
 </body>
 ```
 

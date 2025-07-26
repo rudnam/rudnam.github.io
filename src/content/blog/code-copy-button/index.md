@@ -91,7 +91,7 @@ Add the following CSS to your stylesheet (`global.css` or similar):
 
 ## 3. Add the JavaScript for Copy Functionality
 
-Create `public/copy-button.js`:
+Create `src/scripts/copy-button.js`:
 
 ```js
 function copyToClipboard(copyBtn, text) {
@@ -118,7 +118,9 @@ Then include it in your Astro layout (e.g., `src/layouts/PageLayout.astro`):
 <body>
   <slot />
   ...
-  <script type="module" src={`${import.meta.env.BASE_URL}copy-button.js`}></script>
+  <script>
+    import "@/scripts/copy-button.js";
+  </script>
 </body>
 ```
 
