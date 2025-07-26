@@ -54,36 +54,38 @@ Add the following CSS to your stylesheet (`global.css` or similar):
 
 ```css
 .code-wrapper {
-position: relative;
-margin: 1.25rem 0;
+  position: relative;
+  margin: 1.25rem 0;
 }
 
 .code-wrapper pre {
-overflow-x: auto;
-padding-right: 2.5rem; /_ Space for the button _/
+  overflow-x: auto;
+  padding-right: 2.5rem;
 }
 
 .copy-btn {
-position: absolute;
-top: 0.5rem;
-right: 0.5rem;
-background: rgba(0, 0, 0, 0.6);
-color: white;
-border: none;
-padding: 0.25rem 0.5rem;
-border-radius: 0.25rem;
-font-size: 0.75rem;
-cursor: pointer;
-opacity: 0;
-transition: opacity 0.2s, background 0.2s;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.2s,
+    background 0.2s;
 }
 
 .code-wrapper:hover .copy-btn {
-opacity: 1;
+  opacity: 1;
 }
 
 .copy-btn:hover {
-background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 ```
 
