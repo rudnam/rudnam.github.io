@@ -6,7 +6,7 @@ demoURL: "https://up-dctid.vercel.app/"
 repoURL: "https://github.com/ctid-department/dctid-website"
 ---
 
-![DCTID Website](/dctid-website.png)
+![DCTID Website](dctid-website.png)
 
 Responsive website for the Department of Clothing, Textiles, and Interior Design at the University of the Philippines Diliman, built for both desktop and mobile use.
 
