@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        serif: ["Lora", ...defaultTheme.fontFamily.serif],
+        sans: ["Inter", "Noto Sans JP", ...defaultTheme.fontFamily.sans],
+        serif: ["Lora", "Noto Serif JP", ...defaultTheme.fontFamily.serif],
       },
     },
   },

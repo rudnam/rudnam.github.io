@@ -16,7 +16,7 @@ for full details.
 
 ---
 
-### How it works
+## How it works
 
 LockSense is made up of three parts:
 

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-heading {
+  @apply font-semibold;
+  @apply text-black/85 dark:text-white/85;
+}
+
+.text-body {
+  @apply text-black/75 dark:text-white/75;
+}
+
 html {
   overflow-y: scroll;
   color-scheme: light;
@@ -20,7 +29,7 @@ body {
   @apply font-sans antialiased;
   @apply flex flex-col;
   @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/75 dark:text-white/75;
+  @apply text-body;
 }
 
 header {
@@ -39,8 +48,8 @@ footer {
 
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
-  @apply prose-headings:font-bold prose-headings:font-serif;
-  @apply prose-headings:text-black dark:prose-headings:text-white;
+  @apply prose-headings:font-semibold prose-headings:font-serif;
+  @apply prose-headings:text-black/85 dark:prose-headings:text-white/85;
   @apply prose-p:text-black/75 dark:prose-p:text-white/75;
 }
 
