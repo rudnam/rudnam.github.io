@@ -72,32 +72,36 @@ html.scrolled #back-to-top {
   @apply opacity-100 pointer-events-auto;
 }
 
-@media (pointer: fine) {
-  article img,
-  img.click-to-zoom {
-    cursor: zoom-in;
-    transition: transform 0.3s ease;
-    max-width: 100%;
-    height: auto;
-  }
-
-  article img:hover,
-  img.click-to-zoom:hover {
-    transform: scale(1.0175);
-  }
-
-  article img:active,
-  img.click-to-zoom:active {
-    transform: scale(2.25);
-    z-index: 10;
-    position: relative;
-  }
-}
-
 html *::selection {
   background-color: #0000000d;
 }
 
 html.dark *::selection {
   background-color: #ffffff1a;
+}
+
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+.zoom-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.zoom-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.zoomable-img {
+  cursor: zoom-in;
+  transition: transform 0.3s;
 }
