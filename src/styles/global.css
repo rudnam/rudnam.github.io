@@ -18,6 +18,11 @@ html {
 
 html.dark {
   color-scheme: dark;
+  .astro-code,
+  .astro-code span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+  }
 }
 
 html,
@@ -84,17 +89,18 @@ html.scrolled #back-to-top {
 }
 
 html *::selection {
-  background-color: #0000001f;
+  @apply bg-zinc-300;
 }
 
 html.dark *::selection {
-  background-color: #ffffff1a;
+  @apply bg-zinc-700;
 }
 
-.astro-code::selection,
-.astro-code *::selection {
-  background-color: #334455;
+.astro-code {
+  @apply border border-black/10 dark:border-white/10;
 }
+
+/* Image zoom */
 
 .zoom-overlay {
   position: fixed;
@@ -120,4 +126,41 @@ html.dark *::selection {
 .zoomable-img {
   cursor: zoom-in;
   transition: transform 0.3s;
+}
+
+/* Copy button */
+
+.code-wrapper {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.code-wrapper pre {
+  overflow-x: auto;
+  padding-right: 2.5rem;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.2s,
+    background 0.2s;
+}
+
+.code-wrapper:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
