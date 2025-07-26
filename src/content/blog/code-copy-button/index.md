@@ -92,23 +92,16 @@ background: rgba(0, 0, 0, 0.8);
 Create `public/copy-button.js`:
 
 ```js
-function setupCopyButtons() {
-  document.querySelectorAll(".code-wrapper .copy-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const code = btn.previousElementSibling.querySelector("code");
-      navigator.clipboard.writeText(code.innerText).then(() => {
-        btn.innerText = "Copied!";
-        setTimeout(() => (btn.innerText = "Copy"), 2000);
-      });
-    });
+document.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("copy-btn")) return;
+
+  const pre = e.target.previousElementSibling;
+  const code = pre.querySelector("code");
+  navigator.clipboard.writeText(code.innerText).then(() => {
+    e.target.innerText = "Copied!";
+    setTimeout(() => (e.target.innerText = "Copy"), 2000);
   });
-}
-
-// Run on initial load
-setupCopyButtons();
-
-// Re-run when Astro page navigation finishes
-document.addEventListener("astro:page-load", setupCopyButtons);
+});
 ```
 
 Then include it in your Astro layout (e.g., `src/layouts/PageLayout.astro`):
