@@ -1,6 +1,6 @@
 ---
 title: "Meditations by Marcus Aurelius"
-description: "One of my favorite books of all time."
+description: "One of my favorite books."
 date: "Jul 09 2025"
 ---
 
