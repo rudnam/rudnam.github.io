@@ -38,7 +38,6 @@ export default function rehypeCopyButton() {
 Then, enable this plugin in your `astro.config.ts`:
 
 ```ts
-
 import rehypeCopyButton from "./src/rehype/rehype-copy-button";
 
 export default defineConfig({
