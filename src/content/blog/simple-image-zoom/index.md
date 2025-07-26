@@ -122,7 +122,7 @@ document.addEventListener("click", (e) => {
 });
 ```
 
-### 5. Add the zoom overlay component and zoom script to Astro layout
+## 5. Add the zoom overlay component and zoom script to Astro layout
 
 Include the zoom overlay component and zoom script in your Astro layout (e.g., `src/layouts/PageLayout.astro`):
 
