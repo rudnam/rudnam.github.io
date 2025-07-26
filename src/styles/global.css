@@ -4,11 +4,11 @@
 
 .text-heading {
   @apply font-semibold;
-  @apply text-black/85 dark:text-white/85;
+  @apply text-black/80 dark:text-white/90;
 }
 
 .text-body {
-  @apply text-black/75 dark:text-white/75;
+  @apply text-black/70 dark:text-white/80;
 }
 
 html {
@@ -49,8 +49,9 @@ footer {
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
   @apply prose-headings:font-semibold prose-headings:font-serif;
-  @apply prose-headings:text-black/85 dark:prose-headings:text-white/85;
-  @apply prose-p:text-black/75 dark:prose-p:text-white/75;
+  p {
+    @apply text-body;
+  }
 }
 
 @layer utilities {

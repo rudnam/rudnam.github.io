@@ -37,7 +37,7 @@ export default function rehypeImageZoom() {
 }
 ```
 
-This rehype plugin automatically adds the `zoomable-img` class to every \<img> tag in your markdown.
+This rehype plugin automatically adds the `zoomable-img` class to every image from your markdown.
 
 Then, enable it in your `astro.config.ts`:
 
