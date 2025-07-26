@@ -2,35 +2,27 @@ function isDesktop() {
   return window.matchMedia("(pointer: fine)").matches;
 }
 
-function setupZoom() {
-  if (!isDesktop()) return; // Skip setup on mobile/touch devices
-
-  const overlay = document.querySelector(".zoom-overlay") || createOverlay();
-
-  document.querySelectorAll(".zoomable-img").forEach((img) => {
-    img.addEventListener("click", () => {
-      overlay.querySelector("img").src = img.src;
-      overlay.classList.add("active");
-    });
-  });
-
-  overlay.addEventListener("click", () => {
-    overlay.classList.remove("active");
-  });
+function zoomImage(overlay, img) {
+  overlay.querySelector("img").src = img.currentSrc || img.src;
+  overlay.classList.add("active");
 }
 
-function createOverlay() {
-  const overlay = document.createElement("div");
-  overlay.className = "zoom-overlay";
-  const overlayImg = document.createElement("img");
-  overlayImg.alt = "Zoom overlay";
-  overlay.appendChild(overlayImg);
-  document.body.appendChild(overlay);
-  return overlay;
+function unzoomImage(overlay) {
+  overlay.classList.remove("active");
 }
 
-// Run on initial load
-setupZoom();
+document.addEventListener("click", (e) => {
+  if (!isDesktop()) return;
 
-// Re-run when Astro page navigation finishes
-document.addEventListener("astro:page-load", setupZoom);
+  const overlay = document.querySelector(".zoom-overlay");
+  const img = e.target.closest(".zoomable-img");
+
+  if (img) {
+    zoomImage(overlay, img);
+    return;
+  }
+
+  if (overlay.classList.contains("active")) {
+    unzoomImage(overlay);
+  }
+});

@@ -94,15 +94,21 @@ Add the following CSS to your stylesheet (`global.css` or similar):
 Create `public/copy-button.js`:
 
 ```js
+function copyToClipboard(copyBtn, text) {
+  navigator.clipboard.writeText(text).then(() => {
+    copyBtn.innerText = "Copied!";
+    setTimeout(() => (copyBtn.innerText = "Copy"), 2000);
+  });
+}
+
 document.addEventListener("click", (e) => {
   if (!e.target.classList.contains("copy-btn")) return;
 
-  const pre = e.target.previousElementSibling;
-  const code = pre.querySelector("code");
-  navigator.clipboard.writeText(code.innerText).then(() => {
-    e.target.innerText = "Copied!";
-    setTimeout(() => (e.target.innerText = "Copy"), 2000);
-  });
+  const copyBtn = e.target;
+  const wrapper = e.target.closest(".code-wrapper");
+  const code = wrapper.querySelector("pre code");
+
+  copyToClipboard(copyBtn, code.innerText);
 });
 ```
 
@@ -111,6 +117,7 @@ Then include it in your Astro layout (e.g., `src/layouts/PageLayout.astro`):
 ```astro
 <body>
   <slot />
+  ...
   <script type="module" src={`${import.meta.env.BASE_URL}copy-button.js`}></script>
 </body>
 ```

@@ -122,6 +122,9 @@ html.dark *::selection {
 .zoom-overlay.active {
   opacity: 1;
   pointer-events: auto;
+  img {
+    cursor: zoom-out;
+  }
 }
 .zoomable-img {
   cursor: zoom-in;
