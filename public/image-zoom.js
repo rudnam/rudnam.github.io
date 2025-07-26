@@ -1,4 +1,10 @@
+function isDesktop() {
+  return window.matchMedia("(pointer: fine)").matches;
+}
+
 function setupZoom() {
+  if (!isDesktop()) return; // Skip setup on mobile/touch devices
+
   const overlay = document.querySelector(".zoom-overlay") || createOverlay();
 
   document.querySelectorAll(".zoomable-img").forEach((img) => {
