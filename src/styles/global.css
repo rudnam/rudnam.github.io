@@ -90,6 +90,11 @@ html.dark *::selection {
   background-color: #ffffff1a;
 }
 
+.astro-code::selection,
+.astro-code *::selection {
+  background-color: #334455;
+}
+
 .zoom-overlay {
   position: fixed;
   inset: 0;
